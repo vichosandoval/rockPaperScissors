@@ -3,13 +3,13 @@ let machineScore = 0;
 let stillPlaying = true;
 let choices = ["rock", "papper", "scissors"];
 
-while(stillPlaying != true){
-    if (playerScore = 5 || machineScore == 5){
+while(stillPlaying){
+    if (playerScore === 5 || machineScore === 5){
         stillPlaying = false;
     } else {
         let playerChoise = window.prompt('Enter your input:')
         playerChoise = playerChoise.toLowerCase();;
-        let randomPlay = numeroAleatorio = Math.floor(Math.random() * 3);
+        let randomPlay = Math.floor(Math.random() * 3);
         let machineChoise = choices[randomPlay];
         if ((playerChoise == "rock" && machineChoise == "scissors") || 
             (playerChoise == "papper" && machineChoise == "rock") || 
