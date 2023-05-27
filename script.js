@@ -1,7 +1,7 @@
 let playerScore = 0;
 let machineScore = 0;
 let stillPlaying = true;
-let choices = ["rock", "papper", "scissors"];
+const choices = ["rock", "papper", "scissors"];
 
 while(stillPlaying){
     if (playerScore === 5 || machineScore === 5){
